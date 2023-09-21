@@ -1,0 +1,457 @@
+body {
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+
+img {
+    width: 70px;   /* กว้าง */
+    height: 20px;   /* สูง */
+    margin-left: 10px; /* ระยะห่างด้านซ้ายของรูปภาพ */
+   
+}
+
+h1 {
+    color: #ffffff;
+    padding: 14px 16px;
+    border: 2px solid #3d3d3d; /*สีของกรอบ Home */
+    padding: 10px;
+    background-color: #3d3d3d; /* สีพื้นหลังในกรอบ */
+    position: relative;
+    top: -20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+    
+} 
+
+.info-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 50px;
+    width: 450px;
+    height: 10px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 24px; /* ปรับขนาดตัวอักษรเป็น 16px */
+}
+
+/* ปรับขนาด */
+button {
+    padding: 10px 20px;
+    font-size: 24px; /* ขนาดตัวอักษร */
+}
+
+/* ปรับสี */
+button {
+    background-color: #3180f8; /* สีพื้นหลังปุ่ม */
+    color: #ffffff; /* สีของตัวอักษรบนปุ่ม */
+    width: 100px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 50px; /* ปรับความยาวตามที่คุณต้องการ */
+}
+
+/* เคลื่อนย้ายปุ่ม */
+button {
+    position: absolute; /* ใช้เพื่อเปลี่ยนการจัดวาง */
+    top: 650px; /* ระยะห่างด้านบน */
+    left: 1350px; /* ระยะห่างด้านซ้าย */
+}
+/* เมื่อโฮเวอร์ปุ่ม (hover) */
+button:hover {
+    background-color: #154fba; /* สีเมื่อโฮเวอร์ปุ่ม */
+    color: #ffffff; /* สีของตัวอักษรเมื่อโฮเวอร์ปุ่ม */
+}
+
+
+
+
+#condition1Button {
+    width: 250px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 90px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -1270px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -500px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+}
+#condition1Button:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+#photocell2Button {
+    width: 250px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 90px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -1270px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -400px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #3b84c9; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+}
+#photocell2Button:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+#repeat3Button {
+    width: 250px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 90px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -1270px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -300px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+}
+#repeat3Button:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+#control4Button {
+    width: 250px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 90px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -1270px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -200px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+}
+#control4Button:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+
+#encoder5Button {
+    width: 250px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 90px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -1270px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -100px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+}
+#encoder5Button:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+
+
+h3 {
+    font-weight: 1000; /* ทำให้ตัวอักษรหนามากขึ้น */
+}
+#filtersetting {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+
+    margin-left: 370px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: 30px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+#monitorsetting {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+
+    margin-left: 900px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: -165px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+
+#allowablerange {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+
+    margin-left: 1000px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: 10px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+
+
+
+
+
+#ondelayenabled {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+
+    margin-left: 460px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 30px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: -128px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+
+#offdelayenabled {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+
+    margin-left: 460px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: 20px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+
+#oneshotenabled {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+
+    margin-left: 460px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: 20px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+
+
+#msecon {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+
+    margin-left: 670px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: -145px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+#msecoff {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+
+    margin-left: 670px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: 21px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+#msecone {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+
+    margin-left: 670px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: 21px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+
+
+
+#numericInputondelayenabled {
+    position: absolute;
+    top: 525px; /* ระยะห่างด้านบน */
+    left: 720px; /* ระยะห่างด้านซ้าย */
+    width: 100px; /* กว้าง */
+    height: 35px; /* สูง */
+    font-size: 45px; /* ขนาดตัวอักษร */
+}
+
+#numericInputoffdelayenabled {
+    position: absolute;
+    top: 575px; /* ระยะห่างด้านบน */
+    left: 720px; /* ระยะห่างด้านซ้าย */
+    width: 100px; /* กว้าง */
+    height: 35px; /* สูง */
+    font-size: 45px; /* ขนาดตัวอักษร */
+}
+
+#numericInputoneshotenabled {
+    position: absolute;
+    top: 625px; /* ระยะห่างด้านบน */
+    left: 720px; /* ระยะห่างด้านซ้าย */
+    width: 100px; /* กว้าง */
+    height: 35px; /* สูง */
+    font-size: 45px; /* ขนาดตัวอักษร */
+}
+
+
+
+#numericInputcasesizeenabled {
+    position: absolute;
+    top: 340px; /* ระยะห่างด้านบน */
+    left: 1290px; /* ระยะห่างด้านซ้าย */
+    width: 100px; /* กว้าง */
+    height: 35px; /* สูง */
+    font-size: 45px; /* ขนาดตัวอักษร */
+}
+
+#numericInputallowablerange {
+    position: absolute;
+    top: 392px; /* ระยะห่างด้านบน */
+    left: 1290px; /* ระยะห่างด้านซ้าย */
+    width: 100px; /* กว้าง */
+    height: 35px; /* สูง */
+    font-size: 45px; /* ขนาดตัวอักษร */
+}
+
+#numericInputturnontimeenabled {
+    position: absolute;
+    top: 445px; /* ระยะห่างด้านบน */
+    left: 1290px; /* ระยะห่างด้านซ้าย */
+    width: 100px; /* กว้าง */
+    height: 35px; /* สูง */
+    font-size: 45px; /* ขนาดตัวอักษร */
+}
+
+
+
+#textInputsettingtype {
+    position: absolute;
+    top: 340px; /* ระยะห่างด้านบน */
+    left: 550px; /* ระยะห่างด้านซ้าย */
+    width: 160px; /* กว้าง */
+    height: 40px; /* สูง */
+    font-size: 50px; /* ขนาดตัวอักษร */
+}
+
+
+
+
+#confirmButton {
+    width: 170px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 70px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -235px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -500px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 28px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+  
+}
+#confirmButton:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+}
+
+
+#cancleButton {
+    width: 170px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 70px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -50px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -500px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 28px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+  
+}
+#cancleButton:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+}
+
+
+
+
+
+
+ /* เช็คบล็อกแรก */
+ #checkbox1 {
+    transform: scale(2.8); /* ปรับขนาด */
+    margin-left: 400px; /* เลื่อนไปทางซ้าย */
+    margin-top: 60px; /* เลื่อนขึ้นบน */
+      
+}
+
+#checkbox1 + label {
+    font-size: 25px; /* ปรับขนาดตัวอักษร */
+    margin-left: 10px; /* เลื่อนไปทางซ้าย */
+    margin-top: -1250px; /* เลื่อนขึ้นบน */
+}
+
+
+
+ /* เช็คบล็อกแรก */
+ #checkbox2 {
+    transform: scale(2.8); /* ปรับขนาด */
+    margin-left: 400px; /* เลื่อนไปทางซ้าย */
+    margin-top: 0px; /* เลื่อนขึ้นบน */
+      
+}
+
+#checkbox2 + label {
+    font-size: 25px; /* ปรับขนาดตัวอักษร */
+    margin-left: 10px; /* เลื่อนไปทางซ้าย */
+    margin-top: -1200px; /* เลื่อนขึ้นบน */
+}
+
+
+ /* เช็คบล็อกแรก */
+ #checkbox3 {
+    transform: scale(2.8); /* ปรับขนาด */
+    margin-left: 400px; /* เลื่อนไปทางซ้าย */
+    margin-top: 0px; /* เลื่อนขึ้นบน */
+      
+}
+
+#checkbox3 + label {
+    font-size: 25px; /* ปรับขนาดตัวอักษร */
+    margin-left: 10px; /* เลื่อนไปทางซ้าย */
+    margin-top: -1200px; /* เลื่อนขึ้นบน */
+}
+
+
+
+ /* เช็คบล็อกแรก */
+ #checkbox4 {
+    transform: scale(2.8); /* ปรับขนาด */
+    margin-left: 950px; /* เลื่อนไปทางซ้าย */
+    margin-top: -50px; /* เลื่อนขึ้นบน */
+      
+}
+
+#checkbox4 + label {
+    font-size:25px; /* ปรับขนาดตัวอักษร */
+    margin-left: 10px; /* เลื่อนไปทางซ้าย */
+    margin-top: -1250px; /* เลื่อนขึ้นบน */
+}
+
+ /* เช็คบล็อกแรก */
+ #checkbox6 {
+    transform: scale(2.8); /* ปรับขนาด */
+    margin-left: 950px; /* เลื่อนไปทางซ้าย */
+    margin-top: 0px; /* เลื่อนขึ้นบน */
+      
+}
+
+#checkbox6 + label {
+    font-size: 25px; /* ปรับขนาดตัวอักษร */
+    margin-left: 10px; /* เลื่อนไปทางซ้าย */
+    margin-top: -1200px; /* เลื่อนขึ้นบน */
+}
+
+
+
+select {
+    width: 200px; /* กำหนดความกว้างของกล่องเลือก */
+    padding: 10px; /* กำหนดระยะห่างแนวดิ่งและแนวนอนภายในกล่องเลือก */
+    border: 1px solid #ccc; /* กำหนดเส้นขอบสีเทา */
+    margin-left: 380px; /* เลื่อนไปทางซ้าย */
+    font-size: 25px; /* ปรับขนาดตัวอักษร */
+}

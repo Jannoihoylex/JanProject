@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Selection page</title>
+    <script src="/public/js/Selectee.js"></script>
+   
+    <link rel="stylesheet" type="text/css" href="/public/css/Selecter.css">
+</head>
+
+<body>
+    <header>
+        <img id="headerImage" src="https://complete.co.th/wp-content/uploads/2021/08/Asset-1.png"
+             alt="รูปภาพของคุณ">
+    </header>
+    
+    
+
+<h1>SELECTION</h1>
+  <div class="info-box">
+      
+      <table>
+        <thead>
+            <tr>
+               <th>first_name</th>
+               <th>last_name</th>
+            </tr>
+        </thead>
+          
+        <tbody id="data-body">
+          <!-- ข้อมูลจะถูกแทรกที่นี่ -->
+        </tbody>
+      </table>
+
+      <script>
+          const dataBody = document.getElementById('data-body');
+      
+          fetch('/data')
+            .then(response => response.json())
+            .then(data => {
+              data.forEach(item => {
+                const row = document.createElement('tr');
+                const first_nameCell = document.createElement('td');
+                const last_nameCell = document.createElement('td');
+                        
+                first_nameCell.textContent = item.first_name;
+                last_nameCell.textContent = item.last_name;
+                        
+                row.appendChild(first_nameCell);
+                row.appendChild(last_nameCell);
+                
+                dataBody.appendChild(row);
+              });
+            });
+      </script> 
+  </div>
+  
+  <label for="numericInput1"></label>
+  <input type="number" id="numericInput1" value="0" min="0" max="999">
+
+  <button onclick="location.href='./Home.html'">Back</button>
+  <button id="confirmButton" class="custom-button" onclick="sendCommand()">Confirm</button>
+  <button id="cancleButton" class="custom-button" onclick="sendCommand()">Cancle</button>
+
+</body>
+</html>
+

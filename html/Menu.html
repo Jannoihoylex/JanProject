@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>   
+        <title>Menu page</title>    
+        <script src="/public/js/login.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="/public/css/Mena.css">    
+</head>
+
+<body>
+    
+    <ul>     
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>   
+            <br>
+            <br>
+            <br>            
+            <button onclick="location.href='./Home.html'">Home</button>        
+            <button onclick="location.href='./Selection.html'">Selection</button>        
+            <button onclick="location.href='./Headink.html'">Head/ink</button>        
+            <button onclick="location.href='./Condition.html'">Condition</button>
+            <br>
+            <br>
+            <br>        
+            <button onclick="location.href='./Edit.html'">Edit</button>      
+            <button onclick="location.href='./Unit.html'">Unit</button>        
+            <button onclick="location.href='./Worklog.html'">Work log</button>        
+            <button onclick="location.href='./Alarm.html'">Alarm code</button>
+            <br>
+            <br>
+            <br>        
+            <button onclick="location.href='./Measurement.html'">Measurement log</button>
+                    
+    </ul>
+    <button id="logoutButton">Logout</button>
+    <script>
+        // ดึงอ้างอิงไปยังปุ่ม Logout
+        const logoutButton = document.getElementById('logoutButton');
+
+        // เพิ่มการจัดการเหตุการณ์คลิกในปุ่ม Logout
+        logoutButton.addEventListener('click', () => {
+            // นำผู้ใช้กลับไปยังหน้า index.html
+            window.location.href = './index.html';
+        });
+    </script>
+    
+</body>
+
+</html>

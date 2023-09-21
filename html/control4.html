@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Condition page</title>
+    <script src="/public/js/Conditee.js"></script>
+   
+    <link rel="stylesheet" type="text/css" href="/public/css/Incondition4.css">
+</head>
+
+<body>
+    <header>
+        <img id="headerImage" src="https://complete.co.th/wp-content/uploads/2021/08/Asset-1.png"
+             alt="รูปภาพของคุณ">
+    </header>
+    
+    
+
+<h1>CONDITION</h1>
+<div class="info-box">
+    <button id="condition1Button" class="custom-button" onclick="navigateTocondition1()">Condition Msg</button>
+    <script>
+    function navigateTocondition1() {
+    window.location.href = './condition1.html'; // กำหนด URL ที่ต้องการไป
+    }
+    </script>
+
+    <button id="photocell2Button" class="custom-button" onclick="navigateTophotocell2()">Photocell</button>
+    <script>
+    function navigateTophotocell2() {
+    window.location.href = './photocell2.html'; // กำหนด URL ที่ต้องการไป
+    }
+    </script>
+
+    <button id="repeat3Button" class="custom-button" onclick="navigateTorepeat3()">Repeat</button>
+    <script>
+    function navigateTorepeat3() {
+    window.location.href = './repeat3.html'; // กำหนด URL ที่ต้องการไป
+    }
+    </script>
+
+    <button id="control4Button" class="custom-button" onclick="navigateTocontrol4()">Control</button>
+    <script>
+    function navigateTocontrol4() {
+    window.location.href = './control4.html'; // กำหนด URL ที่ต้องการไป
+    }
+    </script>
+
+    <button id="encoder5Button" class="custom-button" onclick="navigateToencoder5()">Encoder</button>
+    <script>
+    function navigateToencoder5() {
+    window.location.href = './encoder5.html'; // กำหนด URL ที่ต้องการไป
+    }
+    </script>
+
+  
+
+    <table>
+        <thead>
+            <tr>
+               <th>first_name</th>
+               <th>last_name</th>
+            </tr>
+        </thead>
+          
+        <tbody id="data-body">
+          <!-- ข้อมูลจะถูกแทรกที่นี่ -->
+        </tbody>
+    </table>
+  
+    
+
+    <script>
+        const dataBody = document.getElementById('data-body');
+    
+        fetch('/data')
+          .then(response => response.json())
+          .then(data => {
+            data.forEach(item => {
+              const row = document.createElement('tr');
+              const first_nameCell = document.createElement('td');
+              const last_nameCell = document.createElement('td');
+                      
+              first_nameCell.textContent = item.first_name;
+              last_nameCell.textContent = item.last_name;
+                      
+              row.appendChild(first_nameCell);
+              row.appendChild(last_nameCell);
+              
+              dataBody.appendChild(row);
+            });
+          });
+    </script> 
+</div> 
+    
+  <button onclick="location.href='./Home.html'">Back</button>
+
+  <button id="confirmButton" class="custom-button" onclick="sendCommand()">Confirm</button>
+  <button id="cancleButton" class="custom-button" onclick="sendCommand()">Cancle</button>
+
+  
+  <select id="selecttracking" name="selecttracking">
+    <option value="trackingon">No</option>
+    <option value="trackingyes">Yes</option>          
+  </select>
+  <h3 id="controltracking">Tracking</h3>
+ 
+  
+  <select id="selectbackbasedprinting" name="selectbackbasedprinting">
+    <option value="backbasedprintingon">No</option>
+    <option value="backbasedprintingyes">Yes</option>           
+  </select>
+  <h3 id="controlbackbasedprinting">Back-based printing</h3>
+
+  
+  <h3 id="controlcontrolduringprinting">Control during printing</h3>
+  <select id="selectcontrolduringprinting" name="selectstopimmediately">
+    <option value="controlduringprintingwaitforprintend">Wait for print end</option>
+    <option value="controlduringprintingforcetotreminateprinting">Force to terminate printing</option>           
+  </select>
+
+  <select id="selectprintendsignal" name="selectprintendsignal">
+    <option value="printendsignalon">No</option>
+    <option value="printendsignalyes">Yes</option>           
+  </select>
+  <h3 id="controlprintendsignal">Print end signal</h3>
+
+
+  <input type="checkbox" id="checkbox7" name="checkbox7" value="checkbox7">
+    <label for="checkbox7">Msg change after print    Message number</label>
+    <input type="number" id="numericInputmsgchanceafter" name="numericValue" min="0" max="999">
+
+
+  <select id="selectoneshotprinting" name="selectoneshotprinting">
+    <option value="oneshotprintingon">No</option>
+    <option value="oneshotprintingyes">Yes</option>           
+  </select>
+  <h3 id="controloneshotprinting">One shot printing</h3>
+
+
+  <input type="number" id="numericInputnumberofreadrecovery" name="numericValue" min="1" max="9999">
+  <h3 id="controlnumberofreadyrecovery">Number of ready recovery processes:</h3>
+
+  
+  <input type="number" id="numericInputprintcount" name="numericValue" min="1" max="9999">
+  <h3 id="controlprintcount">Print count:</h3>
+
+</body>
+
+</html>
+
+                
+                

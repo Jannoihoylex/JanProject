@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Condition page</title>
+    <script src="/public/js/Conditee.js"></script>
+   
+    <link rel="stylesheet" type="text/css" href="/public/css/Conditer.css">
+</head>
+
+<body>
+    <header>
+        <img id="headerImage" src="https://complete.co.th/wp-content/uploads/2021/08/Asset-1.png"
+             alt="รูปภาพของคุณ">
+    </header>
+    
+    
+
+<h1>CONDITION</h1>
+<div class="info-box">
+    <button id="condition1Button" class="custom-button" onclick="navigateTocondition1()">Condition Msg</button>
+    <script>
+    function navigateTocondition1() {
+    window.location.href = './condition1.html'; // กำหนด URL ที่ต้องการไป
+    }
+    </script>
+
+    <button id="photocell2Button" class="custom-button" onclick="navigateTophotocell2()">Photocell</button>
+    <script>
+    function navigateTophotocell2() {
+    window.location.href = './photocell2.html'; // กำหนด URL ที่ต้องการไป
+    }
+    </script>
+
+    <button id="repeat3Button" class="custom-button" onclick="navigateTorepeat3()">Repeat</button>
+    <script>
+    function navigateTorepeat3() {
+    window.location.href = './repeat3.html'; // กำหนด URL ที่ต้องการไป
+    }
+    </script>
+
+    <button id="control4Button" class="custom-button" onclick="navigateTocontrol4()">Control</button>
+    <script>
+    function navigateTocontrol4() {
+    window.location.href = './control4.html'; // กำหนด URL ที่ต้องการไป
+    }
+    </script>
+
+    <button id="encoder5Button" class="custom-button" onclick="navigateToencoder5()">Encoder</button>
+    <script>
+    function navigateToencoder5() {
+    window.location.href = './encoder5.html'; // กำหนด URL ที่ต้องการไป
+    }
+    </script>
+
+  
+
+    <table>
+        <thead>
+            <tr>
+               <th>first_name</th>
+               <th>last_name</th>
+            </tr>
+        </thead>
+          
+        <tbody id="data-body">
+          <!-- ข้อมูลจะถูกแทรกที่นี่ -->
+        </tbody>
+    </table>
+
+    <script>
+        const dataBody = document.getElementById('data-body');
+    
+        fetch('/data')
+          .then(response => response.json())
+          .then(data => {
+            data.forEach(item => {
+              const row = document.createElement('tr');
+              const first_nameCell = document.createElement('td');
+              const last_nameCell = document.createElement('td');
+                      
+              first_nameCell.textContent = item.first_name;
+              last_nameCell.textContent = item.last_name;
+                      
+              row.appendChild(first_nameCell);
+              row.appendChild(last_nameCell);
+              
+              dataBody.appendChild(row);
+            });
+          });
+    </script> 
+</div> 
+          
+    
+
+  <button onclick="location.href='./Home.html'">Back</button>
+
+</body>
+
+</html>
+
+                

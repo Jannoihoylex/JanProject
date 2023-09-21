@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home page</title>
+  
+    
+
+   
+    <link rel="stylesheet" type="text/css" href="/public/css/Hometwo.css">
+</head>
+
+<body>
+    <header>
+        <img id="headerImage" src="https://complete.co.th/wp-content/uploads/2021/08/Asset-1.png"
+             alt="รูปภาพของคุณ">
+    </header>
+    
+    
+
+    <h1>HOME</h1>
+    <div class="info-box">
+      <button id="runButton" class="custom-button" onclick="sendCommand()">Run</button>
+      <button id="stopButton" class="custom-button" onclick="sendCommand()">Stop</button>
+      <button id="manualButton" class="custom-button" onclick="sendCommand()">Manual Printing</button>
+
+      <button id="SelectButton" class="custom-button" onclick="navigateToSelection()">Selection</button>
+      <script>
+        function navigateToSelection() {
+        window.location.href = './Selection.html'; // กำหนด URL ที่ต้องการไป
+      }
+      </script>
+
+      <button id="ConditionButton" class="custom-button" onclick="navigateToCondition()">Condition</button>
+      <script>
+        function navigateToCondition() {
+        window.location.href = './Condition.html'; // กำหนด URL ที่ต้องการไป
+      }
+      </script>
+
+      <button id="HeadinkButton" class="custom-button" onclick="navigateToHeadink()">Head/ink</button>
+      <script>
+        function navigateToHeadink() {
+        window.location.href = './Headink.html'; // กำหนด URL ที่ต้องการไป
+      }
+      </script>
+
+      <button id="EditButton" class="custom-button" onclick="navigateToEdit()">Edit current message value</button>
+      <script>
+        function navigateToEdit() {
+        window.location.href = './Edit.html'; // กำหนด URL ที่ต้องการไป
+      }
+      </script>
+
+        <table>
+            <thead>
+                <tr>
+                   <th></th>
+                   <th></th>
+                </tr>
+            </thead>
+              
+            <tbody id="databody">
+              <!-- ข้อมูลจะถูกแทรกที่นี่ -->
+            </tbody>
+        </table>
+
+        
+
+
+
+</body>
+
+<script>
+  const dataBody = document.getElementById('databody');
+
+  fetch('/data')
+    .then(response => response.json())
+    .then(data => {
+      data.forEach(item => {
+        const row = document.createElement('tr');
+        const first_nameCell = document.createElement('td');
+        const last_nameCell = document.createElement('td');
+                
+        first_nameCell.textContent = item.first_name;
+        last_nameCell.textContent = item.last_name;
+                
+        row.appendChild(first_nameCell);
+        row.appendChild(last_nameCell);
+        
+        dataBody.appendChild(row);
+      });
+    });
+</script> 
+</div>
+<button onclick="location.href='./Menu.html'">Back</button>
+
+
+
+<script src="/public/js/Hometow.js"></script>
+
+</html>

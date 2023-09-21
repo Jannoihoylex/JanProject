@@ -1,0 +1,196 @@
+body {
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+
+img {
+    width: 70px;   /* กว้าง */
+    height: 20px;   /* สูง */
+    margin-left: 10px; /* ระยะห่างด้านซ้ายของรูปภาพ */
+   
+}
+
+h1 {
+    color: #ffffff;
+    padding: 14px 16px;
+    border: 2px solid #3d3d3d; /*สีของกรอบ Home */
+    padding: 10px;
+    background-color: #3d3d3d; /* สีพื้นหลังในกรอบ */
+    position: relative;
+    top: -20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+    
+} 
+
+.info-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 50px;
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 55px; /* ปรับขนาดตัวอักษรเป็น 16px */
+}
+
+/* ปรับขนาด */
+button {
+    padding: 10px 20px;
+    font-size: 24px; /* ขนาดตัวอักษร */
+}
+
+/* ปรับสี */
+button {
+    background-color: #3180f8; /* สีพื้นหลังปุ่ม */
+    color: #ffffff; /* สีของตัวอักษรบนปุ่ม */
+    width: 100px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 50px; /* ปรับความยาวตามที่คุณต้องการ */
+}
+
+/* เคลื่อนย้ายปุ่ม */
+button {
+    position: absolute; /* ใช้เพื่อเปลี่ยนการจัดวาง */
+    top: 650px; /* ระยะห่างด้านบน */
+    left: 1350px; /* ระยะห่างด้านซ้าย */
+}
+/* เมื่อโฮเวอร์ปุ่ม (hover) */
+button:hover {
+    background-color: #154fba; /* สีเมื่อโฮเวอร์ปุ่ม */
+    color: #ffffff; /* สีของตัวอักษรเมื่อโฮเวอร์ปุ่ม */
+}
+
+#runButton {
+    width: 250px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 100px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -1270px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -300px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #00ff26; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+}
+#runButton:hover {
+    background-color: #007d0a; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+
+#stopButton {
+    width: 250px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 100px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -1270px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -190px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #ff0000; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+  
+}
+#stopButton:hover {
+    background-color: #8f0000; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+#manualButton {
+    width: 400px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 100px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -800px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -270px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+   
+}
+#manualButton:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+#SelectButton {
+    width: 300px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 150px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -1290px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -518px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 10px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+   
+}
+#SelectButton:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+#ConditionButton {
+    width: 300px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 150px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -220px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -518px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 10px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+   
+}
+#ConditionButton:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+#HeadinkButton {
+    width: 400px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 100px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -380px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -270px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+   
+}
+#HeadinkButton:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+
+#EditButton {
+    width: 820px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 100px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -800px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -150px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+   
+}
+#EditButton:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+
+ 
+
+
+
+
+

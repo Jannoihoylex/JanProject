@@ -1,0 +1,430 @@
+body {
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+
+img {
+    width: 70px;   /* กว้าง */
+    height: 20px;   /* สูง */
+    margin-left: 10px; /* ระยะห่างด้านซ้ายของรูปภาพ */
+   
+}
+
+h1 {
+    color: #ffffff;
+    padding: 14px 16px;
+    border: 2px solid #3d3d3d; /*สีของกรอบ Home */
+    padding: 10px;
+    background-color: #3d3d3d; /* สีพื้นหลังในกรอบ */
+    position: relative;
+    top: -20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+    
+} 
+
+.info-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 50px;
+    width: 450px;
+    height: 10px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 24px; /* ปรับขนาดตัวอักษรเป็น 16px */
+}
+
+/* ปรับขนาด */
+button {
+    padding: 10px 20px;
+    font-size: 24px; /* ขนาดตัวอักษร */
+}
+
+/* ปรับสี */
+button {
+    background-color: #3180f8; /* สีพื้นหลังปุ่ม */
+    color: #ffffff; /* สีของตัวอักษรบนปุ่ม */
+    width: 100px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 50px; /* ปรับความยาวตามที่คุณต้องการ */
+}
+
+/* เคลื่อนย้ายปุ่ม */
+button {
+    position: absolute; /* ใช้เพื่อเปลี่ยนการจัดวาง */
+    top: 650px; /* ระยะห่างด้านบน */
+    left: 1350px; /* ระยะห่างด้านซ้าย */
+}
+/* เมื่อโฮเวอร์ปุ่ม (hover) */
+button:hover {
+    background-color: #154fba; /* สีเมื่อโฮเวอร์ปุ่ม */
+    color: #ffffff; /* สีของตัวอักษรเมื่อโฮเวอร์ปุ่ม */
+}
+
+
+
+
+#condition1Button {
+    width: 250px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 90px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -1270px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -500px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+}
+#condition1Button:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+#photocell2Button {
+    width: 250px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 90px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -1270px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -400px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+}
+#photocell2Button:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+#repeat3Button {
+    width: 250px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 90px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -1270px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -300px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+}
+#repeat3Button:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+#control4Button {
+    width: 250px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 90px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -1270px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -200px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #3b84c9; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+}
+#control4Button:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+
+#encoder5Button {
+    width: 250px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 90px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -1270px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -100px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 32px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+}
+#encoder5Button:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+} 
+
+
+
+h3 {
+    font-weight: 1000; /* ทำให้ตัวอักษรหนามากขึ้น */
+}
+
+
+
+
+
+  #confirmButton {
+    width: 170px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 70px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -235px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -500px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 28px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+  
+}
+#confirmButton:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+}
+
+
+#cancleButton {
+    width: 170px; /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 70px; /* ปรับความยาวตามที่คุณต้องการ */
+    margin: 10px; /* ระยะห่างระหว่างปุ่ม *//* สไตล์เฉพาะสำหรับปุ่มที่มี id เป็น runButton */
+    /* คุณสามารถเพิ่มสไตล์เฉพาะตามต้องการ */
+    margin-left: -50px; /* เคลื่อนปุ่มไปทางขวา */
+    margin-top: -500px; /* เคลื่อนปุ่มขึ้นขึ้นด้านบน */
+    background-color: #737373; /* สีพื้นหลัง */
+    color: #ffffff; /* สีของตัวอักษร */
+    font-size: 28px;
+    border-radius: 6px; /* ปรับมุมของปุ่ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* สร้างเงา 2px ขนาด และให้สีเงาเป็นสีดำโปร่ง */
+  
+}
+#cancleButton:hover {
+    background-color: #3b84c9; /* สีเมื่อโฮเวอร์ที่ปุ่ม */
+}
+
+
+
+
+
+
+#controltracking {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+
+    margin-left: 420px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: -45px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+
+/* CSS เพื่อปรับขนาดและตำแหน่งของกล่องเลือก */
+#selecttracking {
+    width: 300px; /* ปรับขนาดกล่องเลือก */
+    height: 50px; /* ปรับความสูงของกล่องเลือก */
+    margin-left: 560px; /* เลื่อนไปทางซ้าย */
+    margin-top: 30px; /* เลื่อนขึ้นบน */
+}
+ /* CSS เพื่อปรับขนาดตัวอักษรในกล่องเลือก */
+ #selecttracking {
+    font-size: 30px; /* ปรับขนาดตัวอักษรในกล่องเลือก */
+    width: 100px;
+    height: 50px;
+}
+/* CSS เพื่อปรับขนาดตัวอักษรในตัวเลือก */
+#selecttracking option {
+    font-size: 28px; /* ปรับขนาดตัวอักษรในตัวเลือก */
+}
+
+
+
+
+#controlbackbasedprinting {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+
+    margin-left: 970px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: -45px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+/* CSS เพื่อปรับขนาดและตำแหน่งของกล่องเลือก */
+#selectbackbasedprinting {
+    width: 300px; /* ปรับขนาดกล่องเลือก */
+    height: 50px; /* ปรับความสูงของกล่องเลือก */
+    margin-left: 1265px; /* เลื่อนไปทางซ้าย */
+    margin-top: -40px; /* เลื่อนขึ้นบน */
+}
+ /* CSS เพื่อปรับขนาดตัวอักษรในกล่องเลือก */
+ #selectbackbasedprinting {
+    font-size: 30px; /* ปรับขนาดตัวอักษรในกล่องเลือก */
+    width: 100px;
+    height: 50px;
+}
+/* CSS เพื่อปรับขนาดตัวอักษรในตัวเลือก */
+#selectbackbasedprinting option {
+    font-size: 28px; /* ปรับขนาดตัวอักษรในตัวเลือก */
+}
+
+
+
+
+
+#controlcontrolduringprinting {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+
+    margin-left: 420px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: -25px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+/* CSS เพื่อปรับขนาดและตำแหน่งของกล่องเลือก */
+#selectcontrolduringprinting {
+    width: 300px; /* ปรับขนาดกล่องเลือก */
+    height: 50px; /* ปรับความสูงของกล่องเลือก */
+    margin-left: 430px; /* เลื่อนไปทางซ้าย */
+    margin-top: -10px; /* เลื่อนขึ้นบน */
+}
+ /* CSS เพื่อปรับขนาดตัวอักษรในกล่องเลือก */
+ #selectcontrolduringprinting {
+    font-size: 25px; /* ปรับขนาดตัวอักษรในกล่องเลือก */
+    width: 320px;
+    height: 50px;
+}
+/* CSS เพื่อปรับขนาดตัวอักษรในตัวเลือก */
+#selectcontrolduringprinting option {
+    font-size: 25px; /* ปรับขนาดตัวอักษรในตัวเลือก */
+}
+
+
+
+#controlprintendsignal {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+
+    margin-left: 970px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: -45px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+/* CSS เพื่อปรับขนาดและตำแหน่งของกล่องเลือก */
+#selectprintendsignal {
+    width: 300px; /* ปรับขนาดกล่องเลือก */
+    height: 50px; /* ปรับความสูงของกล่องเลือก */
+    margin-left: 1205px; /* เลื่อนไปทางซ้าย */
+    margin-top: -40px; /* เลื่อนขึ้นบน */
+}
+ /* CSS เพื่อปรับขนาดตัวอักษรในกล่องเลือก */
+ #selectprintendsignal {
+    font-size: 30px; /* ปรับขนาดตัวอักษรในกล่องเลือก */
+    width: 100px;
+    height: 50px;
+}
+/* CSS เพื่อปรับขนาดตัวอักษรในตัวเลือก */
+#selectprintendsignal option {
+    font-size: 28px; /* ปรับขนาดตัวอักษรในตัวเลือก */
+}
+
+
+#controloneshotprinting {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+
+    margin-left: 420px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: -45px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+
+/* CSS เพื่อปรับขนาดและตำแหน่งของกล่องเลือก */
+#selectoneshotprinting {
+    width: 300px; /* ปรับขนาดกล่องเลือก */
+    height: 50px; /* ปรับความสูงของกล่องเลือก */
+    margin-left: 680px; /* เลื่อนไปทางซ้าย */
+    margin-top: -30px; /* เลื่อนขึ้นบน */
+}
+ /* CSS เพื่อปรับขนาดตัวอักษรในกล่องเลือก */
+ #selectoneshotprinting {
+    font-size: 30px; /* ปรับขนาดตัวอักษรในกล่องเลือก */
+    width: 100px;
+    height: 50px;
+}
+/* CSS เพื่อปรับขนาดตัวอักษรในตัวเลือก */
+#selectoneshotprinting option {
+    font-size: 28px; /* ปรับขนาดตัวอักษรในตัวเลือก */
+}
+
+
+
+
+
+#numericInputmsgchanceafter {
+    position: absolute;
+    top: 490px; /* ระยะห่างด้านบน */
+    left: 1320px; /* ระยะห่างด้านซ้าย */
+    width: 60px; /* กว้าง */
+    height: 30px; /* สูง */
+    font-size: 23px; /* ขนาดตัวอักษร */
+}
+
+ /* เช็คบล็อกแรก */
+ #checkbox7 {
+    transform: scale(2.8); /* ปรับขนาด */
+    margin-left: 950px; /* เลื่อนไปทางซ้าย */
+    margin-top: 0px; /* เลื่อนขึ้นบน */
+      
+}
+
+#checkbox7 + label {
+    font-size: 20px; /* ปรับขนาดตัวอักษร */
+    margin-left: 10px; /* เลื่อนไปทางซ้าย */
+    margin-top: -1200px; /* เลื่อนขึ้นบน */
+}
+
+
+#controlnumberofreadyrecovery {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+
+    margin-left: 450px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: 10px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: -20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+
+/* เคลื่อน Numeric Input ไปทางด้านขวา */
+#numericInputnumberofreadrecovery {
+    position: absolute;
+    top: 555px; /* ระยะห่างด้านบน */
+    left: 830px; /* ระยะห่างด้านซ้าย */
+    width: 70px; /* กว้าง */
+    height: 30px; /* สูง */
+    font-size: 23px; /* ขนาดตัวอักษร */
+}
+
+
+
+
+#controlprintcount {
+    /* สไตล์สำหรับ <h3 id="height"> */
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+
+    margin-left: 450px; /* เลื่อนข้อความไปทางขวา 20px */
+    margin-right: 20px; /* เลื่อนข้อความไปทางซ้าย 20px */
+    margin-top: 30px; /* เลื่อนข้อความขึ้นด้านบน 20px */
+    margin-bottom: 20px; /* เลื่อนข้อความลงด้านล่าง 20px */
+}
+
+/* เคลื่อน Numeric Input ไปทางด้านขวาnumericInputprintcount */
+#numericInputprintcount {
+    position: absolute;
+    top: 595px; /* ระยะห่างด้านบน */
+    left: 595px; /* ระยะห่างด้านซ้าย */
+    width: 70px; /* กว้าง */
+    height: 30px; /* สูง */
+    font-size: 23px; /* ขนาดตัวอักษร */
+}
+
